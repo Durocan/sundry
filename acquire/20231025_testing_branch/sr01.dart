@@ -10,4 +10,6 @@ void main() {
   int sum = numbers.fold(9, (e, p) => e + p);
   print(sum);
 
+  print("trying branching");
+
 }
