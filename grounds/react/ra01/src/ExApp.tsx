@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import { StateComponent2 } from "./examples/pages/ex01/StateComponent2";
 import { PropsAndState } from "./examples/pages/ex01/PropsAndState";
 import { NonContext } from "./examples/pages/Context/NonCntxt";
+import { CounterCntxt } from "./examples/pages/Context/CounterCntxt";
 
 const Container = styled.div`
   text-align: center;
@@ -19,6 +20,8 @@ function ExApp() {
             <PropsAndState></PropsAndState>
             <hr />
             <NonContext></NonContext>
+            <hr />
+            <CounterCntxt></CounterCntxt>
         </Container>
     );
 }
