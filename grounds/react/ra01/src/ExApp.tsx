@@ -5,6 +5,7 @@ import { StateComponent2 } from "./examples/pages/ex01/StateComponent2";
 import { PropsAndState } from "./examples/pages/ex01/PropsAndState";
 import { NonContext } from "./examples/pages/ex02/NonCntxt";
 import { CounterCntxt } from "./examples/pages/ex02/CounterCntxt";
+import { ToDoCntxt } from "./examples/pages/ex02/TodoCntxt";
 
 const Container = styled.div`
   text-align: center;
@@ -22,6 +23,8 @@ function ExApp() {
             <NonContext></NonContext>
             <hr />
             <CounterCntxt></CounterCntxt>
+            <hr />
+            <ToDoCntxt></ToDoCntxt>
         </Container>
     );
 }
