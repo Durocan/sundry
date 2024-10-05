@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
-import ExApp from './ExApp';
+//import ExApp from './ExApp';
 import reportWebVitals from './reportWebVitals';
+import ExLayApp from './ExLayApp';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ExApp />
+    <ExLayApp />
   </React.StrictMode>
 );
 
