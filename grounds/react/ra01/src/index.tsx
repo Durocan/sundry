@@ -5,13 +5,16 @@ import './index.css';
 //import ExApp from './ExApp';
 import reportWebVitals from './reportWebVitals';
 import ExLayApp from './ExLayApp';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ExLayApp />
+    <BrowserRouter>
+      <ExLayApp />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

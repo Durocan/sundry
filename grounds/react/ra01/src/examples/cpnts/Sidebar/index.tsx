@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 
 const Container = styled.aside`
   background-color: #f2f2f2;
@@ -14,7 +15,7 @@ const MenuItem = styled.li`
   margin-bottom: 10px;
 `;
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   color: #333;
   text-decoration: none;
   font-size: 18px;
@@ -41,10 +42,10 @@ export const Sidebar = () => {
   return (
     <Container>
       <Menu>
-        <MenuItem><MenuLink href='#'>Home</MenuLink></MenuItem>
-        <MenuItem><MenuLink href='#'>About</MenuLink></MenuItem>
-        <MenuItem><MenuLink href='#'>Services</MenuLink></MenuItem>
-        <MenuItem><MenuLink href='#'>Contact</MenuLink></MenuItem>
+        <MenuItem><MenuLink to='/'>Home</MenuLink></MenuItem>
+        <MenuItem><MenuLink to='/about'>About</MenuLink></MenuItem>
+        <MenuItem><MenuLink to='/content1'>Services</MenuLink></MenuItem>
+        <MenuItem><MenuLink to='#'>Contact</MenuLink></MenuItem>
       </Menu>
       <Info>
         <InfoTitle>Follow Us</InfoTitle>

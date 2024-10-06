@@ -1,10 +1,33 @@
 import { Form1 } from './examples/forms/Form1';
 import { Content1 } from './examples/pages/ex03/Contents/Content1';
 
+import { Routes, Route } from 'react-router-dom';
+import styled from '@emotion/styled';
+import { Home } from './examples/pages/Home';
+import { About } from './examples/pages/About';
+
+const NotFound = styled.div`
+  text-align: center;
+`;
+
 function ExLayApp() {
     return (
         <Form1>
-          <Content1 />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/content1" element={<Content1 />} />
+      <Route
+       path={'*'}
+       element={
+         <>
+         <NotFound>
+         404 <br /> NOT FOUND
+         </NotFound>
+         </>
+       }
+      />
+    </Routes>
         </Form1>
     );
 }
