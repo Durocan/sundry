@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { Home } from './examples/pages/Home';
 import { About } from './examples/pages/About';
+import { Content2 } from './examples/pages/ex03/Contents/Content2';
 
 const NotFound = styled.div`
   text-align: center;
@@ -17,6 +18,7 @@ function ExLayApp() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/content1" element={<Content1 />} />
+      <Route path="/content2" element={<Content2 />} />
       <Route
        path={'*'}
        element={
