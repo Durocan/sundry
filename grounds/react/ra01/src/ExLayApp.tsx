@@ -1,13 +1,11 @@
-import styled from '@emotion/styled';
-
-const Container = styled.div`
-  text-align: center;
-`;
+import { Form1 } from './examples/forms/Form1';
+import { Content1 } from './examples/pages/ex03/Contents/Content1';
 
 function ExLayApp() {
     return (
-        <Container>
-        </Container>
+        <Form1>
+          <Content1 />
+        </Form1>
     );
 }
 

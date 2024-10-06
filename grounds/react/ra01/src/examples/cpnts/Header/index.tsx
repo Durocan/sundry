@@ -1,2 +1,40 @@
+import styled from '@emotion/styled';
 
-export const Header = () => {return null;};
+const Container = styled.div`
+  background-color: indigo;
+  color: #fff;
+  padding: 20px;
+`;
+
+const Logo = styled.img`
+  width: 150px;
+`;
+
+const Nav = styled.nav`
+  margin-top: 10px;
+`;
+
+const NavLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 10px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+export const Header = () => {
+  return (
+    <Container>
+      <Logo src='https://via.placeholder.com/150' alt='Logo' />
+      <Nav>
+        <NavLink href='#'>Home</NavLink>
+        <NavLink href='#'>About</NavLink>
+        <NavLink href='#'>Services</NavLink>
+        <NavLink href='#'>Contact</NavLink>
+      </Nav>
+    </Container>
+  );
+};
